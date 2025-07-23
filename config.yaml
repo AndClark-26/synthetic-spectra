@@ -1,12 +1,12 @@
 ---
 name: CO
-molecule_file: "Data/MoleculeData/NOData.txt"
+molecule_file: "Data/MoleculeData/COData.txt"
 partfun_file: 'Data/Partfuncs/Partfun_12C16O.txt'
 temperature: 296  # Kelvin
 mass: 28  # Molecular Mass
 PTorr: 100  # Total pressure
 PTorr_M: 1  # Species partial pressure
 length: 10  # Absorption path cm
-nu0: 1700  # Wavenumber lower bound
-nuf: 1800  # Wavenumber upper bound
+nu0: 1900  # Wavenumber lower bound
+nuf: 2400  # Wavenumber upper bound
 ...
