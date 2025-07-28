@@ -1,12 +1,29 @@
 ---
-name: CO
-molecule_file: "Data/MoleculeData/COData.txt"
-partfun_file: 'Data/Partfuncs/Partfun_12C16O.txt'
-temperature: 296  # Kelvin
-mass: 28  # Molecular Mass
-PTorr: 100  # Total pressure
-PTorr_M: 1  # Species partial pressure
-length: 10  # Absorption path cm
-nu0: 1900  # Wavenumber lower bound
-nuf: 2400  # Wavenumber upper bound
+# name: CO
+# molecule_file: "Data/MoleculeData/COData.txt"
+# partfun_file: 'Data/Partfuncs/Partfun_12C16O.txt'
+# temperature: 296  # Kelvin
+# mass: 28  # Molecular Mass
+# PTorr: 100  # Total pressure
+# PTorr_M: 1  # Species partial pressure
+# length: 10  # Absorption path cm
+# nu0: 1900  # Wavenumber lower bound
+# nuf: 2400  # Wavenumber upper bound
+parameters:
+ - temperature: 296
+ - length: 10
+ - PTorr: 100
+ - nu0: 1700
+ - nuf: 2300
+molecules:
+ - - name: 'CO'
+   - molecule_file: 'Data/MoleculeData/COData.txt'
+   - partfun_file: 'Data/Partfuncs/Partfun_12C16O.txt'
+   - mass: 28
+   - PTorr_M: 1
+ - - name: 'NO'
+   - molecule_file: 'Data/MoleculeData/NOData.txt'
+   - partfun_file: 'Data/Partfuncs/Partfun_12C16O.txt'
+   - mass: 30
+   - PTorr_M: 1
 ...
